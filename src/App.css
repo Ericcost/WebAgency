@@ -1,6 +1,6 @@
 body {
-  background: linear-gradient(to left, #000000, #e32222, #000000);
-  color: #fff;
+  background: #fff;
+  border: 1px solid #ccc;
 }
 
 h1, h2 {
@@ -14,7 +14,7 @@ h3 {
 }
 
 a {
-  margin: 1rem 2rem;
+  margin: 2rem 2rem;
   padding: 0.5rem;
   border: solid 1px;
   border-radius: 3px;
@@ -22,6 +22,50 @@ a {
   text-decoration: inherit;
 }
 
+label {
+  margin: 0 2rem;
+}
+
 .navbar {
   margin: 1rem 2rem;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.App {
+  margin: -18px -10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+body #light {
+  background: linear-gradient(to left, #fff, #63dce2, #fff);
+  color: #000000;
+}
+
+body #dark {
+  background: linear-gradient(to left, #000000, #e32222, #000000);
+  color: #fff;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#link {
+  background-color: #fbef05;
+}
+
+#card {
+  background-color: #fb05c6;
 }
