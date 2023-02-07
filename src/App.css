@@ -1,0 +1,27 @@
+body {
+  background: linear-gradient(to left, #000000, #e32222, #000000);
+  color: #fff;
+}
+
+h1, h2 {
+  margin: 2rem 4rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+h3 {
+  margin: 1rem 2rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+a {
+  margin: 1rem 2rem;
+  padding: 0.5rem;
+  border: solid 1px;
+  border-radius: 3px;
+  background-color:  #19d4af5d;
+  text-decoration: inherit;
+}
+
+.navbar {
+  margin: 1rem 2rem;
+}
