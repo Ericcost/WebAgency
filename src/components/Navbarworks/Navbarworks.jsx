@@ -11,6 +11,7 @@ const Navbarworks = () => {
 
   const display = useContext(DisplayContext) || {};
   const context = display.display || 'link';
+  const toggleDisplay = display.toggleDisplay || (() => {});
   console.log(display);
 
   useEffect(() => {
@@ -25,8 +26,8 @@ const Navbarworks = () => {
         <div className='subtitle'>
           <h1> Projects </h1>
           <div className='switch'>
-            <label> {display.display === "link" ? "Link Mode" : "Card Mode"} </label>
-            <ReactSwitch onChange={display.toggleDisplay} checked={display.display === 'card'} />
+            <label> {context === "link" ? "Link Mode" : "Card Mode"} </label>
+            <ReactSwitch onChange={toggleDisplay} checked={context === 'card'} />
           </div>          
         </div>
         <div>
